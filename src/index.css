@@ -3,11 +3,16 @@
 body{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
+  font-size: 14px;
 }
 
 .container{
   width: 90%;
   margin: auto;
+}
+
+.bg-primary{
+  background-color: rgb(255, 111, 0);
 }
 
 .link:hover{

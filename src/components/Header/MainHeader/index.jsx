@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import Search from '../../Search'
-import NavLoginPanel from '../NavLoginPanel'
+import NavLoginPanel from '../MainHeader/NavLoginPanel'
 
 const MainHeader = () => {
   return (
@@ -29,4 +29,4 @@ const MainHeader = () => {
   )
 }
 
-export default MainHeader
+export default MainHeader;
