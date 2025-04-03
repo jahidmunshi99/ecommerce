@@ -10,7 +10,7 @@ const MainHeader = () => {
             {/* Left Coloum */}
             <div className='col_1 w-[30%]'>
                 <Link to={"/"}>
-                    <img src="src/assets/logo.jpg" alt="" />
+                    <img src="src/assets/logo.jpg" alt="logo" />
                 </Link>
             </div>
 
