@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const TopStrip = () => {
   return (
     <>
-      <div className="top-strip py-2 border-t-1 border-b-1 border-b-gray-200 border-t-gray-200">
+      <div className="top-strip py-2 border-t-1 border-b-1 border-b-gray-200 border-t-gray-200 bg-white">
         <div className="container">
           <div className="flex justify-between items-center">
             {/* Left Column */}

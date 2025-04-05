@@ -15,7 +15,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className='py-4 border-t-1 border-b-1 border-b-gray-200 border-t-gray-200'>
+    <nav className='py-4 border-t-1 border-b-1 border-b-gray-200 border-t-gray-200 bg-white'>
         <div className="container">
           <div className='flex justify-between items-center gap-8 font-[500]'>
             {/* Shop Category Menus */}

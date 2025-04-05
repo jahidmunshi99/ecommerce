@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '@mui/material/Button';
 import { IoSearchOutline } from "react-icons/io5";
-import '../Search/search.css'
+import './search.css'
 
 
 const Search = () => {
