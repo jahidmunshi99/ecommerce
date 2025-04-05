@@ -1,14 +1,16 @@
 import React from 'react'
 import HeroSlider from './HeroSlider'
-import HomeCatSlider from './HomeCartSlider'
+import CategorySlider from './CategorySlider'
 import FreeShipping from './FreeShipping'
 import Blog from './Blog'
+import ProductAdSlider from './ProductAdSlider'
 
 const Home = () => {
   return (
     <div>
       <HeroSlider/>
-      <HomeCatSlider/>
+      <CategorySlider/>
+      <ProductAdSlider/>
       <FreeShipping/>
       <Blog/>
     </div>

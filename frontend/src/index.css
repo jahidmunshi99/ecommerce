@@ -13,7 +13,7 @@ body{
   height: 10px !important;
 }
 ::-webkit-scrollbar-thumb{
-  background: rgb(255, 111, 0);
+  background: #E04A4A;
 }
 ::-webkit-scrollbar-track{
   background: #fff;
@@ -25,17 +25,17 @@ body{
 }
 
 .bg-primary{
-  background-color: rgb(255, 111, 0);
+  background-color: #E04A4A;
 }
 
 .primary-hover:hover{
-  background: rgb(255, 111, 0);
+  background: #E04A4A;
 }
 
 .link:hover{
-  color: rgb(255, 111, 0);
+  color: #E04A4A;
 }
 
 .border-primary{
-  border-color: rgb(255, 111, 0);
+  border-color: #E04A4A;
 }
