@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+body{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  background: #f5f0f0;
+  color: #000000 !important;
+}
+
+::-webkit-scrollbar{
+  width: 10px !important;
+  height: 10px !important;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(255, 111, 0);
+}
+::-webkit-scrollbar-track{
+  background: #fff;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+.bg-primary{
+  background-color: rgb(255, 111, 0);
+}
+
+.primary-hover:hover{
+  background: rgb(255, 111, 0);
+}
+
+.link:hover{
+  color: rgb(255, 111, 0);
+}
+
+.border-primary{
+  border-color: rgb(255, 111, 0);
+}
