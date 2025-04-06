@@ -7,12 +7,12 @@ const PropularProducts = () => {
   return (
     <section className='py-10'>
         <div className="container">
-            <div className="flex justify-between items-center">
-                <div className="col w-[40%]">
+            <div className="flex flex-wrap justify-between items-center">
+                <div className="col_1 w-full sm:w-auto">
                     <SectionTitle title={'Popular Products'}/>
                     <SectionSubTitle subtitle={'Do not miss the current offers until the end of March.'}/>
                 </div>
-                <div className="col w-[60%]">
+                <div className="col_2 w-full sm:w-auto">
                     <CatagoryTab/>
                 </div>
             </div>
