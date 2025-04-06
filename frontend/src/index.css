@@ -24,12 +24,12 @@ body{
   margin: auto;
 }
 
-.bg-primary{
+.bg-theme{
   background-color: #E04A4A;
 }
 
-.primary-hover:hover{
-  background: #E04A4A;
+.bg-theme:hover{
+  background: #000000;
 }
 
 .link:hover{

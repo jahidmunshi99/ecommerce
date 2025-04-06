@@ -4,6 +4,7 @@ import CategorySlider from './CategorySlider'
 import FreeShipping from './FreeShipping'
 import Blog from './Blog'
 import ProductAdSlider from './ProductAdSlider'
+import PropularProducts from './PopularProducts'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <HeroSlider/>
       <CategorySlider/>
       <ProductAdSlider/>
+      <PropularProducts/>
       <FreeShipping/>
       <Blog/>
     </div>
