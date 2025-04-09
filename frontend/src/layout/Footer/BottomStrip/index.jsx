@@ -9,7 +9,7 @@ import { SiWise } from "react-icons/si";
 
 const BottonStrip = () => {
   return (
-    <div className='py-4 border-t-1 border-t-gray-200'>
+    <div className='py-4 border-t-1 border-t-gray-200 bg-white'>
         <div className="container">
             <div className="flex justify-between items-center">
                 {/* Social Media icons */}
