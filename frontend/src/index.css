@@ -39,3 +39,7 @@ body{
 .border-primary{
   border-color: #E04A4A;
 }
+
+.text-theme{
+  color: #E04A4A;
+}

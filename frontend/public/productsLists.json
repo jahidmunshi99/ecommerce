@@ -1,0 +1,139 @@
+[
+    {
+      "id": 1,
+      "product_name": "Wireless Bluetooth Headphones",
+      "brand": "SoundPro",
+      "price": 99.99,
+      "discount": 15,
+      "ratings": 4.5,
+      "category": "Electronics",
+      "stock": 120,
+      "description": "High-quality wireless headphones with noise cancellation and long battery life.",
+      "images": [
+        "https://serviceapi.spicezgold.com/download/1742439504084_deel-band-women-rayon-embroidered-kurta-pant-dupatta-set-product-images-rvz2bvyrm2-0-202404071602.webp",
+        "images/headphones2.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "product_name": "Organic Green Tea - 100 Bags",
+      "brand": "NatureLeaf",
+      "price": 25.00,
+      "discount": 10,
+      "ratings": 4.7,
+      "category": "Grocery",
+      "stock": 300,
+      "description": "Pure and organic green tea with a refreshing flavor. Great for detox and metabolism boost.",
+      "images": [
+        "https://serviceapi.spicezgold.com/download/1742439426966_modestouze-attires-women-s-mukaish-worked-ethnic-jacket-with-top-and-pant-set-product-images-rvziicqwq6-0-202403231855.jpg",
+        "images/greentea2.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "product_name": "Running Shoes",
+      "brand": "Sportify",
+      "price": 79.99,
+      "discount": 20,
+      "ratings": 4.3,
+      "category": "Footwear",
+      "stock": 75,
+      "description": "Lightweight and durable running shoes designed for comfort and performance.",
+      "images": [
+        "https://serviceapi.spicezgold.com/download/1742439142764_gespo-peach-solid-mandarin-collar-half-sleeve-casual-t-shirt-product-images-rvrtzhyumb-1-202304080900.jpg",
+        "images/shoes2.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "product_name": "Gaming Keyboard RGB",
+      "brand": "TechZone",
+      "price": 59.99,
+      "discount": 5,
+      "ratings": 4.6,
+      "category": "Computers",
+      "stock": 50,
+      "description": "Mechanical gaming keyboard with customizable RGB lighting and fast response keys.",
+      "images": [
+        "https://serviceapi.spicezgold.com/download/1742439426968_modestouze-attires-women-s-mukaish-worked-ethnic-jacket-with-top-and-pant-set-product-images-rvziicqwq6-2-202403231855.jpg",
+        "images/keyboard2.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "product_name": "Stainless Steel Cookware Set - 10 Pieces",
+      "brand": "HomeChef",
+      "price": 120.00,
+      "discount": 25,
+      "ratings": 4.8,
+      "category": "Kitchen",
+      "stock": 40,
+      "description": "Durable and stylish stainless steel cookware set, perfect for everyday cooking needs.",
+      "images": [
+        "https://serviceapi.spicezgold.com/download/1742439786564_gespo-black-teal-blue-colorblocked-round-neck-half-sleeve-casual-t-shirt-product-images-rvwmlodbas-2-202304131033.webp",
+        "images/cookware2.jpg"
+      ]
+    },
+    {
+        "id": 6,
+        "product_name": "Stainless Steel Cookware Set - 10 Pieces",
+        "brand": "HomeChef",
+        "price": 120.00,
+        "discount": 25,
+        "ratings": 4.8,
+        "category": "Kitchen",
+        "stock": 40,
+        "description": "Durable and stylish stainless steel cookware set, perfect for everyday cooking needs.",
+        "images": [
+            "https://serviceapi.spicezgold.com/download/1742439887417_miss-ayse-women-s-multicolor-crepe-printed-top-product-images-rvvlrud6qm-1-202410111253.webp",
+            "images/cookware2.jpg"
+        ]
+    },
+    {
+        "id": 7,
+        "product_name": "Stainless Steel Cookware Set - 10 Pieces",
+        "brand": "HomeChef",
+        "price": 120.00,
+        "discount": 25,
+        "ratings": 4.8,
+        "category": "Kitchen",
+        "stock": 40,
+        "description": "Durable and stylish stainless steel cookware set, perfect for everyday cooking needs.",
+        "images": [
+            "https://serviceapi.spicezgold.com/download/1742441118180_file_1734771942206_motorola-edge-50-fusion-5g-hot-pink-256-gb-12-gb-ram-product-images-orvvh2thgzw-p609069813-3-202405250533.webp"
+        ]
+    },
+    {
+        "id": 8,
+        "product_name": "Stainless Steel Cookware Set - 10 Pieces",
+        "brand": "HomeChef",
+        "price": 120.00,
+        "discount": 25,
+        "ratings": 4.8,
+        "category": "Kitchen",
+        "stock": 40,
+        "description": "Durable and stylish stainless steel cookware set, perfect for everyday cooking needs.",
+        "images": [
+            "https://serviceapi.spicezgold.com/download/1742441181780_apple-iphone-13-128-gb-pink-digital-o491997703-p590798557-3-202208221207.jpeg",
+            "images/cookware2.jpg"
+        ]
+    },
+    {
+        "id": 9,
+        "product_name": "Stainless Steel Cookware Set - 10 Pieces",
+        "brand": "HomeChef",
+        "price": 120.00,
+        "discount": 25,
+        "ratings": 4.8,
+        "category": "Kitchen",
+        "stock": 40,
+        "description": "Durable and stylish stainless steel cookware set, perfect for everyday cooking needs.",
+        "images": [
+            "https://serviceapi.spicezgold.com/download/1742462729828_zoom_0-1673275594.webp",
+            "images/cookware2.jpg"
+        ]
+    }
+]
+  
+
+

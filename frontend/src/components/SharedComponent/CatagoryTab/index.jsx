@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import axios from 'axios';
 import "./CatagoryTab.css";
+import { useFetch } from '../../../useHook/useFetch';
 
 
 
@@ -19,21 +19,9 @@ const CatagoryTab = () => {
     /**
      * Fetch Data
      */
-    const [ items, setItems] = useState([]);
     const url = 'allCategory.json';
-    useEffect(()=>{
-        const fetchData = async() =>{
-            try {
-                const response = await axios.get(url)
-                setItems(response.data)
-            } catch (error) {
-                console.log(error)
-            }
-        }
-        fetchData();
-
-    },[])
-
+    const items = useFetch({url})
+ 
   return (
     <Box sx={{ maxWidth: { xs: 320, sm: 750 }}}>
       <Tabs
