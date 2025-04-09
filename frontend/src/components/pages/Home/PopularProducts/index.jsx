@@ -18,10 +18,10 @@ const PropularProducts = () => {
                     <CatagoryTab/>
                 </div>
             </div>
-        </div>
-        {/** Sliders */}
-        <div className='mt-10'>
-            <Slider/>
+            {/** Sliders */}
+            <div className='mt-10'>
+                <Slider/>
+            </div>
         </div>
     </section>
   )

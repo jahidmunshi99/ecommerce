@@ -20,7 +20,7 @@ body{
 }
 
 .container{
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
@@ -40,6 +40,14 @@ body{
   border-color: #FF5252;
 }
 
-.text-theme{
+.cartbtn-theme{
   color: #FF5252;
+  border-color: #FF5252;
+}
+
+.cartbtn-theme:hover{
+  background: #000;
+  color: #fff;
+  border-color: #000;
+
 }

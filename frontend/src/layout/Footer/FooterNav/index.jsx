@@ -71,7 +71,7 @@ const FooterNav = () => {
                         </div>
                     </form>
                     <div className='flex items-center gap-2 mt-3'>
-                        <input type="checkbox" name='agree' />
+                        <input type="checkbox" className='scale-130' name='agree' />
                         <label htmlFor="" for="agree">I agree to the terms and conditions and the privacy policy</label>
                     </div>
                 </div>

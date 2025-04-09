@@ -5,6 +5,8 @@ import FreeShipping from './FreeShipping'
 import Blog from './Blog'
 import ProductAdSlider from './ProductAdSlider'
 import PropularProducts from './PopularProducts'
+import FeaturedProducts from './FeaturedProducts'
+import LatestProducts from './LatestProducts'
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <CategorySlider/>
       <ProductAdSlider/>
       <PropularProducts/>
+      <LatestProducts/>
+      <FeaturedProducts/>
       <FreeShipping/>
       <Blog/>
     </div>
