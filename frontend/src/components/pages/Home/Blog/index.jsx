@@ -7,7 +7,7 @@ const Blog = () => {
     <div className='py-5 bg-white'>
       <div className="container">
         <SectionTitle title={'From The Blog'}/>
-        <div className='flex columns-4 gap-6 my-5'>
+        <div className='flex flex-col md:flex-row justify-between items-stretch gap-6 overflow-hidden'>
             <PostCard title={"sustainable living through cutting-edge prefabricated homes"} details={'Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by g...'} src={"https://serviceapi.spicezgold.com/download/1741759053899_5-2.jpg"}/>
 
             <PostCard title={"sustainable living through cutting-edge prefabricated homes"} details={'Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by g...'} src={"https://serviceapi.spicezgold.com/download/1741758993155_6-4.jpg"}/>

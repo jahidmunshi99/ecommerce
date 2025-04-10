@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import './CategorySlider.css';
+import './CategorySection.css';
 
 
-const CategorySlider = () => {
+const CategorySection = () => {
   return (
     <div className='pt-0 lg:pt-4 py-4 lg:py-8'>
       <div className="container">
@@ -73,4 +73,4 @@ const CategorySlider = () => {
   )
 }
 
-export default CategorySlider
+export default CategorySection

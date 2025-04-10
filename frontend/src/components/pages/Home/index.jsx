@@ -1,23 +1,26 @@
 import React from 'react'
 import HeroSlider from './HeroSlider'
-import CategorySlider from './CategorySlider'
+import CategorySection from './CategorySection'
 import FreeShipping from './FreeShipping'
 import Blog from './Blog'
-import ProductAdSlider from './ProductAdSlider'
+import ProductAdSection from './ProductAdSection'
 import PropularProducts from './PopularProducts'
 import FeaturedProducts from './FeaturedProducts'
 import LatestProducts from './LatestProducts'
+import CardAdsSection from './CardAdsSection'
 
 const Home = () => {
   return (
     <div>
       <HeroSlider/>
-      <CategorySlider/>
-      <ProductAdSlider/>
-      <PropularProducts/>
+      <CategorySection/>      
+      <ProductAdSection/>
+      <FreeShipping/>
+      <CardAdsSection/>
       <LatestProducts/>
       <FeaturedProducts/>
-      <FreeShipping/>
+      <PropularProducts/>
+      <CardAdsSection/>
       <Blog/>
     </div>
   )

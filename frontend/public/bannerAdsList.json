@@ -1,0 +1,39 @@
+[
+    {
+        "id" : 1,
+        "title" : "Buy Apple Iphone",
+        "category" : "phone",
+        "model": "iPhone-13",
+        "brand": "apple",
+        "price" : "2500",
+        "image" : "https://serviceapi.spicezgold.com/download/1741664496923_1737020250515_New_Project_47.jpg"
+    },
+    {
+        "id" : 2,
+        "title" : "Buy Men's Footwear with low price",
+        "category" : "footware",
+        "model": "bata-1",
+        "brand": "bata",
+        "price" : "200",
+        "image" : "https://serviceapi.spicezgold.com/download/1741664665391_1741497254110_New_Project_50.jpg"
+    },
+    {
+        "id" : 3,
+        "title" : "Buy Men's Footwear with low price",
+        "category" : "footware",
+        "model": "bata-1",
+        "brand": "bata",
+        "price" : "200",
+        "image" : "https://serviceapi.spicezgold.com/download/1741663408792_1737020756772_New_Project_1.png"
+        
+    },
+    {
+        "id" : 4,
+        "title" : "Buy Men's Footwear with low price",
+        "category" : "footware",
+        "model": "bata-1",
+        "brand": "bata",
+        "price" : "200",
+        "image" : "https://serviceapi.spicezgold.com/download/1741663363237_1737020916820_New_Project_52.jpg"
+    }
+]

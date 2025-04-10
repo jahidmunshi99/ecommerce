@@ -24,6 +24,10 @@ body{
   margin: auto;
 }
 
+.text-theme{
+  color: #FF5252;
+}
+
 .bg-theme{
   background-color: #FF5252;
 }

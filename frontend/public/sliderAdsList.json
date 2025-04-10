@@ -1,0 +1,65 @@
+[
+    {
+      "id": 1,
+      "product_name": "Wireless Bluetooth Headphones",
+      "price": 99.99,
+       "subtitle": "High-quality wireless headphones with noise cancellation and long battery life.",
+      "image": "https://serviceapi.spicezgold.com/download/1742441193376_1737037654953_New_Project_45.jpg"
+    },
+    {
+      "id": 2,
+      "product_name": "Organic Green Tea - 100 Bags",
+      "price": 25.00,
+      "subtitle": "Pure and organic green tea with a refreshing flavor. Great for detox and metabolism boost.",
+      "image":"https://serviceapi.spicezgold.com/download/1742439896581_1737036773579_sample-1.jpg"
+    },
+    {
+      "id": 3,
+      "product_name": "Running Shoes",
+      "price": 79.99,
+      "subtitle": "Lightweight and durable running shoes designed for comfort and performance.",
+      "image": "https://serviceapi.spicezgold.com/download/1742441193376_1737037654953_New_Project_45.jpg"
+    },
+    {
+      "id": 4,
+      "product_name": "Gaming Keyboard RGB",
+      "price": 59.99,
+      "subtitle": "Mechanical gaming keyboard with customizable RGB lighting and fast response keys.",
+      "image": "https://serviceapi.spicezgold.com/download/1742439896581_1737036773579_sample-1.jpg"
+    },
+    {
+      "id": 5,
+      "product_name": "Stainless Steel Cookware Set - 10 Pieces",
+      "price": 120.00,
+      "subtitle": "Durable and stylish stainless steel cookware set, perfect for everyday cooking needs.",
+      "image": "https://serviceapi.spicezgold.com/download/1742441193376_1737037654953_New_Project_45.jpg"
+    },
+    {
+        "id": 6,
+        "product_name": "Stainless Steel Cookware Set - 10 Pieces",
+        "price": 120.00,
+        "subtitle": "Durable and stylish stainless steel cookware set, perfect for everyday cooking needs.",
+        "image": "https://serviceapi.spicezgold.com/download/1742439896581_1737036773579_sample-1.jpg"
+    },
+    {
+        "id": 7,
+        "product_name": "Stainless Steel Cookware Set - 10 Pieces",
+        "price": 120.00,
+        "subtitle": "Durable and stylish stainless steel cookware set, perfect for everyday cooking needs.",
+        "image": "https://serviceapi.spicezgold.com/download/1742441193376_1737037654953_New_Project_45.jpg"
+    },
+    {
+        "id": 8,
+        "product_name": "Stainless Steel Cookware Set - 10 Pieces",
+         "price": 120.00,
+        "subtitle": "Durable and stylish stainless steel cookware set, perfect for everyday cooking needs.",
+        "image": "https://serviceapi.spicezgold.com/download/1742439896581_1737036773579_sample-1.jpg"
+    },
+    {
+        "id": 9,
+        "product_name": "Stainless Steel Cookware Set - 10 Pieces",
+        "price": 120.00,
+        "subtitle": "Durable and stylish stainless steel cookware set, perfect for everyday cooking needs.",
+        "image": "https://serviceapi.spicezgold.com/download/1742441193376_1737037654953_New_Project_45.jpg"
+    }
+]
