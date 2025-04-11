@@ -8,19 +8,21 @@ import PropularProducts from './PopularProducts'
 import FeaturedProducts from './FeaturedProducts'
 import LatestProducts from './LatestProducts'
 import CardAdsSection from './CardAdsSection'
+import BestDealSection from './BestDealSection'
 
 const Home = () => {
   return (
     <div>
       <HeroSlider/>
       <CategorySection/>      
+      <PropularProducts/>
       <ProductAdSection/>
       <FreeShipping/>
       <CardAdsSection/>
       <LatestProducts/>
       <FeaturedProducts/>
-      <PropularProducts/>
-      <CardAdsSection/>
+      <BestDealSection/>
+      <LatestProducts/>
       <Blog/>
     </div>
   )

@@ -4,7 +4,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 
 const FreeShipping = () => {
   return (
-    <div className='bg-white py-7'>
+    <div className='bg-white py-10'>
       <div className="container">
         <div className='flex flex-wrap w-full md:w-[90%] justify-between items-center border-primary border-2 rounded-[5px] p-4 mx-auto'>
             <div className="col-1/3">

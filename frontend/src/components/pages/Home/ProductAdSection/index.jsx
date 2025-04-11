@@ -11,7 +11,7 @@ const ProductAdSection = () => {
   
 
   return (
-    <div className="container mx-auto py-4">
+    <div className="container mx-auto py-8">
       <div className="flex flex-col md:flex-row justify-between items-stretch gap-6 overflow-hidden">
         <div className="md:w-2/3 w-full">
           <AdsSlider />
