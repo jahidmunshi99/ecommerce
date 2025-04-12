@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroSlider from './HeroSlider'
-import CategorySection from './CategorySection'
+import CategoriesSlide from './CategoriesSlide'
 import FreeShipping from './FreeShipping'
 import Blog from './Blog'
 import ProductAdSection from './ProductAdSection'
@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       <HeroSlider/>
-      <CategorySection/>      
+      <CategoriesSlide/>      
       <PropularProducts/>
       <ProductAdSection/>
       <FreeShipping/>

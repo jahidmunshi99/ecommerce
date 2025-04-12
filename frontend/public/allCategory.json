@@ -1,39 +1,50 @@
 [
     {
       "id": "1",
-      "category": "Fashion"
+      "category": "Fashion",
+      "image" : "https://serviceapi.spicezgold.com/download/1741660962379_fash.png"
     },
     {
       "id": "2",
-      "category": "Electronics"
+      "category": "Electronics",
+      "image" : "https://serviceapi.spicezgold.com/download/1741660988059_ele.png"
     },
     {
       "id": "3",
-      "category": "Bags"
+      "category": "Bags",
+      "image" : "https://serviceapi.spicezgold.com/download/1741661045887_bag.png"
+
     },
     {
       "id": "4",
-      "category": "Footwear"
+      "category": "Footwear",
+      "image" : "https://serviceapi.spicezgold.com/download/1741661061379_foot.png"
     },
     {
       "id": "5",
-      "category": "Groceries"
+      "category": "Groceries",
+      "image" : "https://serviceapi.spicezgold.com/download/1741661077633_gro.png"
     },
     {
       "id": "6",
-      "category": "Beauty"
+      "category": "Beauty",
+      "image" : "https://serviceapi.spicezgold.com/download/1741661092792_beauty.png"
     },
     {
       "id": "7",
-      "category": "Fashion"
+      "category": "Fashion",
+      "image" : "https://serviceapi.spicezgold.com/download/1741661105893_well.png"
+
     },
     {
       "id": "8",
-      "category": "Wellness"
+      "category": "Wellness",
+      "image" : "https://serviceapi.spicezgold.com/download/1741661120743_jw.png"
     },
     {
       "id": "9",
-      "category": "Jewellery"
+      "category": "Jewellery",
+      "image" : "https://serviceapi.spicezgold.com/download/1741660988059_ele.png"
     }
   ]
   

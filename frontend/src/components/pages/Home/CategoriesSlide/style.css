@@ -14,10 +14,6 @@
     justify-content: center;
     align-items: center;
   }
-
-.homeCatSlider .swiper-slide{
-    width: 178px !important;
-}
   
 .swiper-slide img {
     display: block;
@@ -27,6 +23,14 @@
     cursor: pointer;
   }
 
-.homeCatSlider .item:hover img {
+.mySwiper .item:hover img {
     transform: scale(1.1);
-    }
+}
+
+.mySwiper .item{
+    width: 183px !important;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-image: initial;
+}
