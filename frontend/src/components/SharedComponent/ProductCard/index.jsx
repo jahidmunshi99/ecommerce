@@ -1,7 +1,7 @@
-import Rating from '@mui/material/Rating';
-import Stack from '@mui/material/Stack';
 import AddCartButton from '../AddCartButton';
 import { Link } from 'react-router';
+import StarRatting from '../StarRatting';
+
 
 
 const ProductCard = ({item}) => {
@@ -42,9 +42,7 @@ const ProductCard = ({item}) => {
           </h2>
           {/* Ratings */}
           <div className="flex items-center space-x-1 text-yellow-400">
-            <Stack spacing={1}>
-              <Rating className='!text-xl' name="half-rating-read" defaultValue={2.5} precision={item.ratings} readOnly />
-            </Stack> 
+            <StarRatting value={2.5}/>
           </div>
 
           {/* Price Section */}

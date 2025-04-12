@@ -1,5 +1,4 @@
 import React from 'react'
-import SectionTitle from '../../../SharedComponent/SectionTitle'
 import PromoCard from '../../../SharedComponent/PromoCard'
 import { useFetch } from '../../../../useHook/useFetch'
 

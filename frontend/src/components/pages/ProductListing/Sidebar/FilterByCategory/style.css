@@ -1,0 +1,21 @@
+
+.category-filter .box::-webkit-scrollbar{
+    width: 5px !important;
+    height: 5px !important;
+  }
+.category-filter .box::-webkit-scrollbar-thumb{
+    background: #ccc9c9;
+  }
+.category-filter .box::-webkit-scrollbar-track{
+    background: #fff;
+  }
+
+
+  .ReactCollapse--collapse {
+    transition: height 0.5s ease;
+  }
+  
+  .ReactCollapse--content {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
