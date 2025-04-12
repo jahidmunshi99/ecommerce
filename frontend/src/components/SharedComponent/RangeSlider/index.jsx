@@ -7,7 +7,7 @@ function valuetext(value) {
 }
 
 export default function RangeSlider() {
-  const [value, setValue] = useState([10, 57]);
+  const [value, setValue] = useState([0, 99]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);

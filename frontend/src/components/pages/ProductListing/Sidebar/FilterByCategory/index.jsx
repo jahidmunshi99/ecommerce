@@ -22,7 +22,7 @@ const FilterByCategory = () => {
         {/** Category Title & ShowHide Button */}
         <div className='!text-black gap-4 flex justify-between items-center'>
            <SidebarTitle title={'Shop by Category'}/>  
-          <div className='cursor-pointer' onClick = {()=>{setShowList(!showList)}}>
+          <div className='cursor-pointer mt-5' onClick = {()=>{setShowList(!showList)}}>
             { showList ? <FaChevronUp /> : <FaChevronDown />}
           </div>
         </div>

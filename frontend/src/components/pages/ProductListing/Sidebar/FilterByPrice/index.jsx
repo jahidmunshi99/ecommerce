@@ -6,7 +6,7 @@ const FilterByPrice = () => {
   return (
     <div className='py-6'>
       <SidebarTitle title={'FilterByPrice'}/>
-      <div className='px-2'>
+      <div className='px-2 mt-4'>
         <RangeSlider/>
       </div>
     </div>
