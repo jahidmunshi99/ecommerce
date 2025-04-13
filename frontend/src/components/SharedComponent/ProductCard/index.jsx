@@ -18,33 +18,27 @@ const ProductCard = ({item}) => {
   }
 
   return (
-      <div className="card rounded-[6px] bg-base-100 w-96 shadow-sm">
-        {/* Image Section */}
-        <figure className='h-[200px]'>
-          <img
-            src={item.images[0]}
-            alt={item.product_name} 
-            className="relative overflow-hidden object-top rounded-t-[6px]"
-            />
-          <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-            {item.discount}%
-          </div>
+      <div className='w-[100%] rounded-[6px] bg-base-10 shadow-sm'>
+        {/** Product Image */}
+        <figure className='!h-[250px] w-[100%] overflow-hidden'>
+          <img className='overflow-hidden object-top rounded-t-[6px]' src={item.images[0]} alt="" />
         </figure>
-        {/* Content Section */}
-        <div className="card-body p-4 flex flex-col">
+
+        {/** Product Details */}
+        <div className="p-4 flex flex-col">
           {/* Category */}
-          <p className="text-xs uppercase text-start text-gray-500">{item.category}</p>
+            <p className="text-xs uppercase text-start text-gray-500">{item.category}</p>
+
           {/* Title */}
           <h2 className="text-start text-[14px] font-[500] py-2 link">
-            <Link to="#">
-            { title() }           
-            </Link>
+            <Link to="#">{ title() }</Link>
           </h2>
+
           {/* Ratings */}
           <div className="flex items-center space-x-1 text-yellow-400">
             <StarRatting value={2.5}/>
           </div>
-
+          
           {/* Price Section */}
           <div className="flex items-center justify-between space-x-2 py-4">
             <span className="line-through text-gray-400 text-[15px] font-[600]">${item.price}</span>

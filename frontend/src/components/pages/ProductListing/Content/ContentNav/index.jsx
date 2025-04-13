@@ -13,10 +13,10 @@ const ContentNav = ({layout, setLayout, items}) => {
             <div className="left-col">
                 {/** View Buttons */}
                 <div className='filterMenuBtn flex gap-1 items-center'>
-                    <IconButton onClick={ ()=> setLayout(false)} className={`!text-[16px] ${ !layout ? 'btnactive' : ''}`}>
+                    <IconButton onClick={ ()=> setLayout(false)} className={`!text-[16px] ${ layout ? '' : 'btnactive'}`}>
                         <AiOutlineMenu />
                     </IconButton>
-                    <IconButton onClick={ ()=> setLayout(true)} className={`!text-[16px] ${ layout ? 'btnactive' : ''}`}>
+                    <IconButton onClick={ ()=> setLayout(true)} className={`!text-[16px] ${ !layout ? '' : 'btnactive'}`}>
                         <IoGrid />
                     </IconButton>
                     <h4>There are {items.length} products.</h4>

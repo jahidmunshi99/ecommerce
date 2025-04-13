@@ -6,7 +6,7 @@ import ProductCard from '../../../../../SharedComponent/ProductCard'
 const TableView = ({items}) => {
 
   return (
-    <div className='flex flex-col md:flex-row justify-between items-stretch gap-26 overflow-hidden'>
+    <div className='grid lg:grid-cols-5 grid-cols-2 items-stretch gap-5 my-6'>
       {
         items.map((item)=>
             <ProductCard key={item.id} item={item}/>
