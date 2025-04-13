@@ -51,7 +51,7 @@ const NavLoginPanel = () => {
           <Tooltip title="cart">
             <Link className = 'text-2xl px-1' to = {"/cart"}>
               <IconButton  aria-label   = "cart">
-                <StyledBadge badgeContent = {4} color     = "secondary">
+                <StyledBadge badgeContent = {4} color = "secondary">
                   <IoCartOutline/>
                 </StyledBadge>
               </IconButton>
