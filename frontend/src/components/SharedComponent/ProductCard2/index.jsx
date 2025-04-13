@@ -10,8 +10,13 @@ const ProductCard2 = ({item}) => {
         <div className='group imgWrapper w-full lg:w-[25%]  overflow-hidden  rounded-md relative'>
          
           {/** Product Image */}
-          <figure className='overflow-hidden !w-100%'>
+          <figure className='overflow-hidden !w-100% relative'>
             <img className='overflow-hidden object-fill w-full' src={item.images[0]} alt="" />
+
+            {/** Show Discount */}
+            <div className='absolute top-2 left-2 bg-theme p-1 rounded-[5px]'>
+              <p className='font-medium text-[13px] text-white'>{item.discount}%</p>
+            </div>
           </figure>
       </div>
       <div className='group imgWrapper w-full lg:w-[75%]  overflow-hidden  rounded-md relative'>

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Layout from '../Layout';
 import Home from '../components/pages/Home';
 import ProductListing from '../components/pages/ProductListing';
+import ProductPage from '../components/pages/ProductPage';
 
 
 const AllRoutes = () => {
@@ -12,6 +13,7 @@ const AllRoutes = () => {
             <Route element={<Layout/>}>
                 <Route path="/" element={<Home/>} />
                 <Route path="/productlisting" element={<ProductListing/>} />
+                <Route path="/product" element={<ProductPage/>} />
             </Route>
         </Routes>
   </BrowserRouter>

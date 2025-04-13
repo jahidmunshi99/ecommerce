@@ -20,8 +20,12 @@ const ProductCard = ({item}) => {
   return (
       <div className='w-[100%] rounded-[6px] bg-base-10 shadow-sm'>
         {/** Product Image */}
-        <figure className='!h-[250px] w-[100%] overflow-hidden'>
+        <figure className='!h-[250px] w-[100%] overflow-hidden relative'>
           <img className='overflow-hidden object-top rounded-t-[6px]' src={item.images[0]} alt="" />
+          {/** Show Discount */}
+          <div className='absolute top-2 left-2 bg-theme p-1 rounded-[5px]'>
+            <p className='font-medium text-[13px] text-white'>{item.discount}%</p>
+          </div>
         </figure>
 
         {/** Product Details */}
