@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ContentNav from '../ContentNav';
-import TableView from '../DisplayLayout/TableView'
-import GridView from '../DisplayLayout/GridView'
+import TableView from './TableView'
+import GridView from './GridView'
 import { useFetch } from '../../../../../useHook/useFetch'
 
 

@@ -23,7 +23,7 @@ const NavLoginPanel = () => {
   return (
     <div className=''>
       <ul className='list-none flex justify-end items-center gap-5 w-full'>
-        <li><Link className='link' to={"/singin"}>Login</Link> | <Link className='link' to={"/singup"}>Register</Link></li>
+        <li><Link className='link' to={"/myaccount"}>Login</Link> | <Link className='link' to={"/myaccount"}>Register</Link></li>
         <li>
           {/* Compare */}
           <Tooltip title="compare">

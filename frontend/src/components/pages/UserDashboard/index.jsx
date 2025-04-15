@@ -1,19 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import UserSidebar from './UserSidebar'
-import UserMain from './UserMain'
-import UserProfileInfo from './UserSidebar/UserProfile'
+import Sidebar from '../../../components/SharedComponent/Sidebar'
+import MainContent from '../../../components/SharedComponent/MainContent'
+import UserDisplay from './UserDisplay'
+
 
 const UserDashboard = () => {
+
+  const [activeTab, setActiveTab] = useState('profile')
+
+  const menuControl = {
+    activeTab, 
+    setActiveTab
+  }
+
   return (
     <section className='bg-gray-100 py-10'>
       <div className='container flex flex-col md:flex-row gap-5 items-start'>
-        <div className='col1 w-full md:w-[30%] lg:w-[20%]'>
-          <UserSidebar/>
-        </div>
-        <div className='col2 w-full md:w-[70%] lg:w-[50%]'>
-          <UserMain/>
-          <UserProfileInfo/>
-        </div>
+        {/** Left Side */}
+        <Sidebar>
+          <UserSidebar menuControl={menuControl}/>
+        </Sidebar>
+
+        {/** Right Side */}
+        <MainContent>
+          <UserDisplay menuControl={menuControl}/>
+        </MainContent>
       </div>
     </section>
 

@@ -1,0 +1,19 @@
+.myAccountTabs ul li{
+    width: 100%;
+    padding: 12px 20px;
+    font-weight:500;
+}
+
+.myAccountTabs ul li button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.myAccountTabs ul li:hover{
+    background-color: rgb(227, 227, 227);
+}
+
+.myAccountTabs .tabactive{
+    border-left: 5px solid #FF5252;
+    font-weight: 600;
+}

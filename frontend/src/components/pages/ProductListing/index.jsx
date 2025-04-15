@@ -1,6 +1,6 @@
 import React from 'react'
-import Sidebar from './Sidebar'
-import Content from './Content'
+import ProductSidebar from './ProductSidebar'
+import ProductContent from './ProductContent'
 
 const ProductListing = () => {
   return (
@@ -8,16 +8,10 @@ const ProductListing = () => {
         <div className="container py-6">
             <div className="flex justify-between flex-col lg:flex-row sm:flex-auto gap-6">
                 {/** Left Side Bar */}
-                <aside className='sidebarWrapper px-4 w-full lg:w-[20%] '>
-                    <Sidebar/>
-                </aside>
+                <ProductSidebar/> 
 
                 {/** Right Sizd Display All Products */}
-                <div className="rightContent w-full bg-white lg:w-[80%]">
-                    <div>
-                        <Content/>
-                    </div>
-                </div>
+                <ProductContent/>
             </div>
         </div>
     </section>
