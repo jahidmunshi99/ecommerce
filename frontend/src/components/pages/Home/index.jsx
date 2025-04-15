@@ -12,7 +12,7 @@ import BestDealSection from './BestDealSection'
 
 const Home = () => {
   return (
-    <div>
+    <div className='theme-body-bg'>
       <HeroSlider/>
       <CategoriesSlide/>      
       <PropularProducts/>
