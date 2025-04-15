@@ -19,6 +19,10 @@ const ReviewSection = () => {
         showReview ? <ProductDetails details={'details'}/> : <ProductReview/>
       }
       
+<<<<<<< HEAD
+=======
+      
+>>>>>>> 1f1db88205cd10aed6b562e4b2b02a952145bb87
   </section>
   )
 }
