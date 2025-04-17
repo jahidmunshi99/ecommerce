@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router'
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
@@ -7,6 +7,8 @@ import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
+import ShoppingCart from '../../../../components/SharedComponent/ShopplingCart';
+
 
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -20,14 +22,30 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 
 const NavLoginPanel = () => {
+
+  {/** Hanlde ShopCardToggle */}
+  const [showCart, setShowCart] = useState(false);
+
+  const handleShopCart = (showCart)=>()=>{
+    setShowCart(showCart)
+  }
+
+  {/** Export as a Object to control the Shopping Cart Side Toggle */}
+  const displayCart = {
+    showCart,
+    handleShopCart
+  }
+
+
+
   return (
-    <div className=''>
+    <>
       <ul className='list-none flex justify-end items-center gap-5 w-full'>
         <li><Link className='link' to={"/myaccount"}>Login</Link> | <Link className='link' to={"/myaccount"}>Register</Link></li>
-        <li>
+        <li className='text-2xl px-1 flex gap-1'>
           {/* Compare */}
           <Tooltip title="compare">
-            <Link className='text-2xl px-1' to={"/cart"}>
+            <Link to={"/"}>
               <IconButton aria-label="cart">
                 <StyledBadge badgeContent = {4} color = "secondary">
                   <IoMdGitCompare/>
@@ -38,7 +56,7 @@ const NavLoginPanel = () => {
 
           {/* Wishlist */}
           <Tooltip title="wishlists">
-            <Link className='text-2xl px-1' to={"/cart"}>
+            <Link className='text-2xl px-1' to={"/"}>
               <IconButton aria-label="cart">
                 <StyledBadge badgeContent = {4} color = "secondary">
                   < FaRegHeart/>
@@ -48,18 +66,17 @@ const NavLoginPanel = () => {
           </Tooltip>
 
           {/* Cart */}
-          <Tooltip title="cart">
-            <Link className = 'text-2xl px-1' to = {"/cart"}>
-              <IconButton  aria-label   = "cart">
+          <Tooltip title="cart" >
+              <IconButton onClick={ handleShopCart(true) } aria-label= "cart" className = 'text-2xl px-1'>
                 <StyledBadge badgeContent = {4} color = "secondary">
                   <IoCartOutline/>
                 </StyledBadge>
               </IconButton>
-            </Link>
           </Tooltip>
         </li>
       </ul>
-    </div>
+      <ShoppingCart displayCart={displayCart} />
+    </>
   )
 }
 

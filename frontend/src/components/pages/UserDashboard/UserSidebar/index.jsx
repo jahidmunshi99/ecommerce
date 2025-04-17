@@ -9,7 +9,9 @@ import './style.css'
 
 const UserSidebar = ({menuControl}) => {
 
-    const { setActiveTab} = menuControl
+    const { setActiveTab } = menuControl
+
+
 
     return (
         <aside className='card bg-white shadow-md rounded-md sticky top-[160px]'>

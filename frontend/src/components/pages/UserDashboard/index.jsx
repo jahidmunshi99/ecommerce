@@ -7,11 +7,13 @@ import UserDisplay from './UserDisplay'
 
 const UserDashboard = () => {
 
+
   const [activeTab, setActiveTab] = useState('profile')
+
 
   const menuControl = {
     activeTab, 
-    setActiveTab
+    setActiveTab,
   }
 
   return (

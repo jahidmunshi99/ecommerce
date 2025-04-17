@@ -19,12 +19,11 @@ const ShopCategoryPanel = ({toggleDrawer, showPanel}) => {
         if (submenuRef.current && !submenuRef.current.contains(event.target)) {
           setIsOpen(false);
         }
-      }})
+    }})
 
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation">
       <List>
-
         {/* Logo */}
         <div className='w-[180px]'>
           <img src="src/assets/logo.jpg" alt="logo" />
