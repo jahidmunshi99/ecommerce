@@ -34,15 +34,17 @@ const NavigationMenu = () => {
 
             {/** Dashboard */}
             <li className='w-[100%]' onClick={()=> (hanleSubmenu('dashboard'))}>
-                <Button className='menubtn flex justify-between items-center w-full gap-3 '>
-                    <div className="flex items-center space-x-2 w-full">
-                        <IoGridOutline className="text-xl text-gray-300" />
-                        <span className="capitalize text-gray-300">Dashboard</span>
-                    </div>
-                    {
-                        showSubMenu === 'dashboard' ? <IoIosArrowDown className="capitalize text-gray-300"/> : <IoIosArrowUp IoIosArrowDown className="capitalize text-gray-300"/>
-                    }    
-                </Button>                
+                <Link to='/' >
+                    <Button className='menubtn flex justify-between items-center w-full gap-3 '>
+                        <div className="flex items-center space-x-2 w-full">
+                            <IoGridOutline className="text-xl text-gray-300" />
+                            <span className="capitalize text-gray-300">Dashboard</span>
+                        </div>
+                        {
+                            showSubMenu === 'dashboard' ? <IoIosArrowDown className="capitalize text-gray-300"/> : <IoIosArrowUp IoIosArrowDown className="capitalize text-gray-300"/>
+                        }    
+                    </Button> 
+                </Link>               
             </li>
 
             {/** Ecommerce */}
