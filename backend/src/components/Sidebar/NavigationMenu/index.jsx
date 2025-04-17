@@ -1,9 +1,8 @@
 import { Button } from '@mui/material';
-import React from 'react'
+import React, { useState } from 'react'
 import { IoGridOutline } from "react-icons/io5";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa";
-import { BiPlug } from "react-icons/bi";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaOpencart } from "react-icons/fa";
 import { RiUserCommunityLine } from "react-icons/ri";
@@ -15,74 +14,128 @@ import { LuAlignEndVertical } from "react-icons/lu";
 
 
 
-
-
-
-
-
-
 import './style.css'
+import { Link } from 'react-router';
 
 
 
 
 const NavigationMenu = () => {
+
+    const [showSubMenu, setShowSubMenu] = useState(false)
+
+    const hanleSubmenu = (menuName)=>{
+        setShowSubMenu( (prev)=> (prev === menuName ? null : menuName))
+    }
+
   return (
     <div className='sidebarmenu'>
         <ul className='list-none w-full'>
+
             {/** Dashboard */}
-            <li className='w-[100%]'>
+            <li className='w-[100%]' onClick={()=> (hanleSubmenu('dashboard'))}>
                 <Button className='menubtn flex justify-between items-center w-full gap-3 '>
                     <div className="flex items-center space-x-2 w-full">
                         <IoGridOutline className="text-xl text-gray-300" />
                         <span className="capitalize text-gray-300">Dashboard</span>
                     </div>
-                    <IoIosArrowDown className="capitalize text-gray-300"/>     
+                    {
+                        showSubMenu === 'dashboard' ? <IoIosArrowDown className="capitalize text-gray-300"/> : <IoIosArrowUp IoIosArrowDown className="capitalize text-gray-300"/>
+                    }    
                 </Button>                
             </li>
 
             {/** Ecommerce */}
-            <li className='w-[100%]'>
+            <li className='w-[100%]' onClick={()=> {hanleSubmenu('ecommerce')}}>
                 <Button className='menubtn flex justify-between items-center w-full gap-3 '>
                     <div className="flex items-center space-x-2 w-full">
                         <FaOpencart className="text-xl text-gray-300" />
                         <span className="capitalize text-gray-300">Ecommerce</span>
                     </div>
-                    <IoIosArrowDown className="capitalize text-gray-300"/>     
+                    {
+                        showSubMenu === 'ecommerce' ? <IoIosArrowUp className="capitalize text-gray-300"/> : <IoIosArrowDown className="capitalize text-gray-300"/>
+                    }
                 </Button>
+
+                {/** Submenu */}
+                {
+                    showSubMenu && (
+                    <div className={`pl-5 overflow-hidden transition-all duration-300 ease-in-out ${
+                        showSubMenu === 'ecommerce' ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                      }`}>
+                        <ul className="w-full text-sm pl-3 rounded-md">
+                            <li className="py-1 cursor-pointer">Customers</li>
+                            <li className="py-1 cursor-pointer">Orders</li>
+                            <li className="py-1 cursor-pointer">Products</li>
+                            <li className="py-1 cursor-pointer">Reports</li>
+                            <li className="py-1 cursor-pointer">Settings</li>
+                        </ul>
+                    </div>
+                    ) 
+                }
             </li>
 
             {/** Users */}
             <li className='w-[100%]'>
-                <Button className='menubtn flex justify-between items-center w-full gap-3 '>
-                    <div className="flex items-center space-x-2 w-full">
-                        <FaRegUser className="text-xl text-gray-300" />
-                        <span className="capitalize text-gray-300">Users</span>
-                    </div>
-                    <IoIosArrowDown className="capitalize text-gray-300"/>     
-                </Button>
+                <Link to={'/user'}>
+                    <Button className='menubtn flex justify-between items-center w-full gap-3 '>
+                        <div className="flex items-center space-x-2 w-full">
+                            <FaRegUser className="text-xl text-gray-300" />
+                            <span className="capitalize text-gray-300">Users</span>
+                        </div>
+                        <IoIosArrowDown className="capitalize text-gray-300"/>     
+                    </Button>
+                </Link>
             </li>
 
             {/** Utility */}
-            <li className='w-[100%]'>
+            <li className='w-[100%]' onClick={()=> {hanleSubmenu('utility')}}>
                 <Button className='menubtn flex justify-between items-center w-full gap-3 '>
                     <div className="flex items-center space-x-2 w-full">
                         <PiSubtractFill className="text-xl text-gray-300" />
                         <span className="capitalize text-gray-300">Utility</span>
                     </div>
-                    <IoIosArrowDown className="capitalize text-gray-300"/>     
+                    {showSubMenu === 'utility' ? <IoIosArrowDown className="capitalize text-gray-300"/> : <IoIosArrowUp className="capitalize text-gray-300" />}     
                 </Button>
+
+                {/** Submenu */}
+                {
+                    showSubMenu && (
+                    <div className={`pl-5 overflow-hidden transition-all duration-300 ease-in-out ${
+                        showSubMenu === 'utility' ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                        }`}>
+                        <ul className="w-full text-sm pl-3 rounded-md">
+                            <li className="py-1 cursor-pointer">FAQs</li>
+                            <li className="py-1 cursor-pointer">404</li>
+                            <li className="py-1 cursor-pointer">Maintainance</li>
+                        </ul>
+                    </div>
+                    ) 
+                }
             </li>
 
             {/** Authentication */}
-            <li className='w-[100%]'>
+            <li className='w-[100%]' onClick={()=>{ hanleSubmenu('authentication')}}>
                 <Button className='menubtn flex justify-between items-center w-full gap-3 '>
                     <div className="flex items-center space-x-2 w-full">
                         <MdPages className="text-xl text-gray-300" />
                         <span className="capitalize text-gray-300">Authentication</span>
                     </div>
-                    <IoIosArrowDown className="capitalize text-gray-300"/>     
+                    { showSubMenu === 'authentication' ? <IoIosArrowDown className="capitalize text-gray-300"/> : <IoIosArrowUp className="capitalize text-gray-300" />}   
                 </Button>
+                {/** Submenu */}
+                {
+                    showSubMenu && (
+                    <div className={`pl-5 overflow-hidden transition-all duration-300 ease-in-out ${
+                        showSubMenu === 'authentication' ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                        }`}>
+                        <ul className="w-full text-sm pl-3 rounded-md">
+                            <li className="py-1 cursor-pointer">Users</li>
+                            <li className="py-1 cursor-pointer">Reset Password</li>
+                        </ul>
+                    </div>
+                    ) 
+                }
             </li>
 
             {/** Community */}
