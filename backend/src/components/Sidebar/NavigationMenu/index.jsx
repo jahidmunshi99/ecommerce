@@ -79,7 +79,7 @@ const NavigationMenu = () => {
 
             {/** Users */}
             <li className='w-[100%]'>
-                <Link to={'/'}>
+                <Link to={'/users'}>
                     <Button className='menubtn flex justify-between items-center w-full gap-3 '>
                         <div className="flex items-center space-x-2 w-full">
                             <FaRegUser className="text-xl text-gray-300" />
