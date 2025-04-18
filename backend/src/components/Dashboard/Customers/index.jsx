@@ -1,19 +1,21 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Tooltip from '@mui/material/Tooltip';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/DeleteOutlined';
 import SaveIcon from '@mui/icons-material/Save';
 import CancelIcon from '@mui/icons-material/Close';
-import PreviewIcon from '@mui/icons-material/RemoveRedEye'; // Icon for Preview
-import faker from 'faker';
+import PreviewIcon from '@mui/icons-material/RemoveRedEye';
+
+
 import {
   GridRowModes,
   DataGrid,
   GridActionsCellItem,
   GridRowEditStopReasons,
-  GridToolbar,
 } from '@mui/x-data-grid';
+
+
 import {
   randomCreatedDate,
   randomTraderName,
@@ -31,34 +33,30 @@ const createRow = (i) => ({
   serial: i + 1,
   name: randomTraderName(),
   email: `user${i + 1}@example.com`,
-  photo: faker.image.avatar(),
-  age: 20 + i,
   joinDate: randomCreatedDate(),
   role: randomRole(),
   status: randomStatus(),
-  password: faker.internet.password(),
   buyingProducts: Math.floor(Math.random() * 10) + 1,
 });
 
 const initialRows = Array.from({ length: 5 }, (_, i) => createRow(i));
+
+
 
 function EditToolbar({ setRows, setRowModesModel }) {
   const handleClick = () => {
     const id = generateRandomId();
     const newRow = {
       id,
-      serial: Date.now(), // just a temp unique number
       name: '',
       email: '',
-      photo: faker.image.avatar(),
-      age: '',
       joinDate: new Date(),
       role: '',
       status: '',
-    //   password: '',
       buyingProducts: 0,
       isNew: true,
     };
+
     setRows((oldRows) => [...oldRows, newRow]);
     setRowModesModel((oldModel) => ({
       ...oldModel,
@@ -80,11 +78,10 @@ function EditToolbar({ setRows, setRowModesModel }) {
   );
 }
 
-export default function Users() {
-  const [rows, setRows] = React.useState(initialRows);
-  const [selectedRows, setSelectedRows] = React.useState({});
-  const [rowModesModel, setRowModesModel] = React.useState({});
-  const [previewRow, setPreviewRow] = React.useState(null); // Track preview state
+export default function Customers() {
+  const [rows, setRows] = useState(initialRows);
+  const [rowModesModel, setRowModesModel] = useState({});
+  const [previewRow, setPreviewRow] = useState(null);
 
   const handleRowEditStop = (params, event) => {
     if (params.reason === GridRowEditStopReasons.rowFocusOut) {
@@ -134,49 +131,21 @@ export default function Users() {
 
   const columns = [
     {
-    field: 'select',
-    headerName: '',
-    width: 50,
-    sortable: false,
-    filterable: false,
-    disableColumnMenu: true,
-    renderCell: (params) => (
-        <input
-        type="checkbox"
-        checked={!!selectedRows[params.id]}
-        onChange={(e) => {
-            const newSelection = { ...selectedRows, [params.id]: e.target.checked };
-            if (!e.target.checked) {
-            delete newSelection[params.id];
-            }
-            setSelectedRows(newSelection);
-        }}
-        />
-    ),
-    headerClassName: 'checkbox-header',
-    },
-    {
       field: 'serial',
       headerName: 'SL',
       width: 70,
       sortable: false,
       editable: false,
     },
-    {   
-    field: 'photo',
-    headerName: 'User Image',
-    width: 120,
-    renderCell: (params) => (
-        <img src={params.value} alt="User" style={{ width: 40, height: 40, borderRadius: '50%' }} />
-    ),
-    },
+
     {
       field: 'name',
       headerName: 'User Name',
-      width: 160,
+      width: 180,
       sortable: true,
       editable: true,
     },
+
     {
       field: 'email',
       headerName: 'Email',
@@ -184,18 +153,19 @@ export default function Users() {
       sortable: false,
       editable: false,
     },
+
     {
       field: 'joinDate',
-      headerName: 'Created at',
+      headerName: 'Date',
       type: 'date',
-      width: 160,
+      width: 120,
       editable: false,
     },
     {
       field: 'role',
-      headerName: 'Role',
+      headerName: 'Country',
       width: 160,
-      editable: true,
+      editable: false,
       type: 'singleSelect',
       valueOptions: roles,
     },
@@ -207,6 +177,7 @@ export default function Users() {
       type: 'singleSelect',
       valueOptions: statuses,
     },
+    
     {
       field: 'actions',
       type: 'actions',
@@ -227,26 +198,26 @@ export default function Users() {
               icon={<CancelIcon />}
               label="Cancel"
               onClick={handleCancelClick(id)}
-              color="inherit"
+              color="red"
             />,
           ];
         }
 
         return [
           <GridActionsCellItem
-            icon={<PreviewIcon />}
+            icon={<PreviewIcon className='text-gray-500' />}
             label="Preview"
             onClick={handlePreviewClick(id)} // Trigger preview
             color="inherit"
           />,
           <GridActionsCellItem
-            icon={<EditIcon />}
+            icon={<EditIcon className='text-dark-700'/>}
             label="Edit"
             onClick={handleEditClick(id)}
             color="inherit"
           />,
           <GridActionsCellItem
-            icon={<DeleteIcon />}
+            icon={<DeleteIcon className='text-red-600'/>}
             label="Delete"
             onClick={handleDeleteClick(id)}
             color="inherit"
@@ -262,8 +233,8 @@ export default function Users() {
         height: 600,
         width: '95%',
         marginTop: '20px',
-        marginLeft: '20px',
-        backgroundColor: 'cyon',
+        padding:'0 25px',
+        backgroundColor: '#101828',
         '& .actions': {
           color: 'text.secondary',
         },
@@ -275,6 +246,11 @@ export default function Users() {
       </Box>
 
       <DataGrid
+      sx={{
+        height: 500,
+        backgroundColor: '#E8EAED',
+        }
+      }
         rows={rows}
         columns={columns}
         editMode="row"
@@ -293,23 +269,6 @@ export default function Users() {
           pagination: { paginationModel: { pageSize: 10, page: 0 } },
         }}
       />
-
-      {/* Display preview details of the selected user */}
-      {previewRow && (
-        <Box sx={{ padding: 2, marginTop: 2, backgroundColor: 'cyon', borderRadius: '8px' }}>
-          <h3>Preview User Details</h3>
-          <img
-            src={previewRow.photo}
-            alt="User Preview"
-            style={{ width: 100, height: 100, borderRadius: '50%' }}
-          />
-          <p><strong>Name:</strong> {previewRow.name}</p>
-          <p><strong>Email:</strong> {previewRow.email}</p>
-          <p><strong>Role:</strong> {previewRow.role}</p>
-          <p><strong>Status:</strong> {previewRow.status}</p>
-          <p><strong>Age:</strong> {previewRow.age}</p>
-        </Box>
-      )}
     </Box>
   );
 }

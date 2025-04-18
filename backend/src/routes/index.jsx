@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router";
 import MainLayout from '../layout/MainLayout';
 import Overview from '../components/Dashboard/Overview';
-import UsersTable from '../components/Dashboard/Users';
+import Customers from '../components/Dashboard/Customers';
 
 
 const AllRoutes = () => {
@@ -11,7 +11,7 @@ const AllRoutes = () => {
         <Routes>
             <Route element={<MainLayout />}>
                 <Route path='/' element={<Overview/>}></Route>
-                <Route path='/user' element={<UsersTable/>}></Route>
+                <Route path='/customers' element={<Customers/>}></Route>
             </Route>
         </Routes>
     </BrowserRouter>

@@ -66,10 +66,10 @@ const NavigationMenu = () => {
                         showSubMenu === 'ecommerce' ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
                       }`}>
                         <ul className="w-full text-sm pl-3 rounded-md">
-                            <li className="py-1 cursor-pointer">Customers</li>
                             <li className="py-1 cursor-pointer">Orders</li>
                             <li className="py-1 cursor-pointer">Products</li>
                             <li className="py-1 cursor-pointer">Reports</li>
+                            <li className="py-1 cursor-pointer"><Link to={'/customers'}>Customers</Link></li>☻
                             <li className="py-1 cursor-pointer">Settings</li>
                         </ul>
                     </div>
@@ -79,7 +79,7 @@ const NavigationMenu = () => {
 
             {/** Users */}
             <li className='w-[100%]'>
-                <Link to={'/user'}>
+                <Link to={'/'}>
                     <Button className='menubtn flex justify-between items-center w-full gap-3 '>
                         <div className="flex items-center space-x-2 w-full">
                             <FaRegUser className="text-xl text-gray-300" />
