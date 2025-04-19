@@ -1,20 +1,14 @@
 import React from 'react'
-import MenuTitle from '../../../common/MenuTitle'
-import MenuTab from '../../../common/MenuTab'
+import AllOrders from '../Orders';
+import SectionHead from '../../../common/SectionHead';
+
 
 const Products = () => {
   return (
     <>
-        <div className='flex justify-between items-center'>
-            {/** Menu Name */}
-            <div>
-                <MenuTitle title={'Products'}></MenuTitle>
-            </div>
-            {/** menu */}
-            <div className =''>    
-                <MenuTab/>
-            </div>
-        </div>
+      <SectionHead title={'Products'} item1={'Add New Product'}/>
+      <AllOrders/>
+      {/* </div> */}
     </>
 
   )

@@ -6,12 +6,12 @@ import Sidebar from '../components/Sidebar';
 
 const MainLayout = () => {
   return (
-    <div className='flex justify-start items-start text-amber-50'>
+    <div className='flex justify-start items-start text-amber-50 overflow-hidden'>
       {/** Sidebar */}
-      <div className='sidebar w-[20%]'>
+      <div className='sidebar w-[20%] max-h-screen'>
         <Sidebar />
       </div>
-      <div className='right w-[80%]'>
+      <div className='right w-[80%] max-h-screen'>
         <div className='flex flex-col'>
           {/** Main Header */}
           <div>

@@ -5,7 +5,7 @@ import RecentOrders from './RecentOrders'
 
 const Overview = () => {
   return (
-    <div className='p-6 overflow-y-auto max-h-screen'>
+    <div className='p-6 overflow-y-scroll max-h-screen'>
         <div className='grid-cols-4 columns-4 gap-6 w-full'>
                 <CustomersCards/>
                 <OrdersCards/>

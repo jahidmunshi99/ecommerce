@@ -5,3 +5,14 @@
 .sidebarmenu ul li .menubtn{
     color:azure
 }
+
+::-webkit-scrollbar{
+    width: 5px !important;
+    height: 5px !important;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: #384a69;
+  }
+  ::-webkit-scrollbar-track{
+    background: #1e293b;
+  }

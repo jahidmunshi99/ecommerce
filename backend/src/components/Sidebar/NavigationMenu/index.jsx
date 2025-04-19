@@ -66,8 +66,9 @@ const NavigationMenu = () => {
                         showSubMenu === 'ecommerce' ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
                       }`}>
                         <ul className="w-full text-sm pl-3 rounded-md">
-                            <li className="py-1 cursor-pointer"><Link to={'/admin/ecommerce/orders'}>Orders</Link></li>
+                            <li className="py-1 cursor-pointer"><Link to={'/admin/ecommerce/category'}>Category</Link></li>
                             <li className="py-1 cursor-pointer"><Link to={'/admin/ecommerce/products'}>Products</Link></li>
+                            <li className="py-1 cursor-pointer"><Link to={'/admin/ecommerce/orders'}>Orders</Link></li>
                             <li className="py-1 cursor-pointer">Reports</li>
                             <li className="py-1 cursor-pointer"><Link to={'/admin/ecommerce/customers'}>Customers</Link></li>☻
                             <li className="py-1 cursor-pointer">Settings</li>
@@ -75,19 +76,6 @@ const NavigationMenu = () => {
                     </div>
                     ) 
                 }
-            </li>
-
-            {/** Users */}
-            <li className='w-[100%]'>
-                <Link to={'/admin/users'}>
-                    <Button className='menubtn flex justify-between items-center w-full gap-3 '>
-                        <div className="flex items-center space-x-2 w-full">
-                            <FaRegUser className="text-xl text-gray-300" />
-                            <span className="capitalize text-gray-300">Users</span>
-                        </div>
-                        <IoIosArrowDown className="capitalize text-gray-300"/>     
-                    </Button>
-                </Link>
             </li>
 
             {/** Utility */}
@@ -179,13 +167,29 @@ const NavigationMenu = () => {
     
             {/** Campaigns */}
             <li className='w-[100%]'>
-                <Button className='menubtn flex justify-between items-center w-full gap-3 '>
-                    <div className="flex items-center space-x-2 w-full">
-                        <MdOutlineCampaign className="text-xl text-gray-300" />
-                        <span className="capitalize text-gray-300">Campaigns</span>
-                    </div>
-                    <IoIosArrowDown className="capitalize text-gray-300"/>     
-                </Button>
+                <Link to={'/admin/campains'}>
+                    <Button className='menubtn flex justify-between items-center w-full gap-3 '>
+                        <div className="flex items-center space-x-2 w-full">
+                            <MdOutlineCampaign className="text-xl text-gray-300" />
+                            <span className="capitalize text-gray-300">Campaigns</span>
+                        </div>
+                        <IoIosArrowDown className="capitalize text-gray-300"/>     
+                    </Button>
+                </Link>
+            </li>
+            
+
+            {/** Users */}
+            <li className='w-[100%]'>
+                <Link to={'/admin/users'}>
+                    <Button className='menubtn flex justify-between items-center w-full gap-3 '>
+                        <div className="flex items-center space-x-2 w-full">
+                            <FaRegUser className="text-xl text-gray-300" />
+                            <span className="capitalize text-gray-300">Users</span>
+                        </div>
+                        <IoIosArrowDown className="capitalize text-gray-300"/>     
+                    </Button>
+                </Link>
             </li>
 
 
