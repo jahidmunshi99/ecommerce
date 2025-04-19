@@ -18,7 +18,7 @@ const MainLayout = () => {
             <Header />
           </div>
           {/** Dashboard Contents */}
-          <main>
+          <main className='p-6'>
             <Outlet />
           </main>
         </div>
