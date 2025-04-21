@@ -41,7 +41,7 @@ const NavLoginPanel = () => {
   return (
     <>
       <ul className='list-none flex justify-end items-center gap-5 w-full'>
-        <li><Link className='link' to={"/myaccount"}>Login</Link> | <Link className='link' to={"/myaccount"}>Register</Link></li>
+        <li><Link className='link hoverEffect' to={"/myaccount"}>Login</Link> | <Link className='link hoverEffect' to={"/myaccount"}>Register</Link></li>
         <li className='text-2xl px-1 flex gap-1'>
           {/* Compare */}
           <Tooltip title="compare">
@@ -56,7 +56,7 @@ const NavLoginPanel = () => {
 
           {/* Wishlist */}
           <Tooltip title="wishlists">
-            <Link className='text-2xl px-1' to={"/"}>
+            <Link className='text-2xl px-1 hoverEffect' to={"/"}>
               <IconButton aria-label="cart">
                 <StyledBadge badgeContent = {4} color = "secondary">
                   < FaRegHeart/>

@@ -1,26 +1,29 @@
 import React from 'react'
 import { Link } from "react-router";
+import Container from "../../../components/SharedComponent/Container"
 
 const TopStrip = () => {
   return (
     <>
-      <div className="top-strip py-2 border-t-1 border-b-1 border-b-gray-200 border-t-gray-200 bg-white">
-        <div className="container">
-          <div className="flex justify-between items-center">
+      <div className="top-strip border-t-1 border-b-1 border-b-gray-200 border-t-gray-200 bg-white w-full">
+        <Container className="py-2 max-w-screen px-10">
+        {/* <div className="container"> */}
+          <div className="grid grid-cols-2 items-center">
             {/* Left Column */}
-            <div className="col_1 w-[50%]">
-              <p className="text-[14px] font-[400]">Get up to 50% off new season styles, limited time only</p>
+            <div className="col-span-1">
+              <p className="font-medium text-[12px] md:text-[13px]">Get up to 50% off new season styles, limited time only</p>
             </div>
 
             {/* Right Column */}
-            <div className="col_2 w-[50%]">
-              <ul className="flex items-center justify-end text-[14px] gap-6">
-                <li className='list-none link font-[400] transition'><Link to="">Help Center</Link></li>
-                <li className='list-none link font-[400] transition'><Link to="">Order Tracking</Link></li>
+            <div className="col-span-1">
+              <ul className="flex items-center justify-end gap-6 list-none">
+                <li className='link hoverEffect font-medium text-[12px] md:text-[13px]'><Link to="">Help Center</Link></li>
+                <li className='link hoverEffect font-medium text-[12px] md:text-[13px]'><Link to="">Order Tracking</Link></li>
               </ul>
             </div>
           </div>
-        </div>
+        {/* </div> */}
+        </Container>
       </div>
     </>
   )
