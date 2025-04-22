@@ -8,7 +8,7 @@ import { FaRegPlusSquare } from "react-icons/fa";
 
 
 
-const ShopCategoryPanel = ({toggleDrawer, showPanel}) => {
+const SideMenuPanel = ({toggleDrawer, showPanel}) => {
 
     const [isOpen, setIsOpen] = useState(false);
     const submenuRef = useRef(null);
@@ -122,4 +122,4 @@ const ShopCategoryPanel = ({toggleDrawer, showPanel}) => {
   )
 }
 
-export default ShopCategoryPanel
+export default SideMenuPanel

@@ -8,6 +8,7 @@ import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import ShoppingCart from '../../../../components/SharedComponent/ShopplingCart';
+import { FaRegUser } from "react-icons/fa";
 
 
 
@@ -40,8 +41,17 @@ const NavLoginPanel = () => {
 
   return (
     <>
-      <ul className='list-none flex justify-end items-center gap-5 w-full'>
-        <li><Link className='link hoverEffect' to={"/myaccount"}>Login</Link> | <Link className='link hoverEffect' to={"/myaccount"}>Register</Link></li>
+      <ul className='list-none flex justify-end items-center gap-1 md:gap-5 w-full'>
+
+        {/** Register & Signin */}
+        <li className='hidden md:block'>
+          <Link className='link hoverEffect' to={"/myaccount"}>Login</Link> | <Link className='link hoverEffect' to={"/myaccount"}>Register</Link>
+        </li>
+        <li className='md:hidden'>
+          <Link className='link hoverEffect' to={"/myaccount"}><FaRegUser className='text-[20px] text-gray-600'/></Link>
+        </li>
+
+        {/** Compare, Wishlist, Card Buttons */}
         <li className='text-2xl px-1 flex gap-1'>
           {/* Compare */}
           <Tooltip title="compare">

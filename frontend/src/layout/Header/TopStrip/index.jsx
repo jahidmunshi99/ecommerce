@@ -6,7 +6,7 @@ const TopStrip = () => {
   return (
     <>
       <div className="top-strip border-t-1 border-b-1 border-b-gray-200 border-t-gray-200 bg-white w-full">
-        <Container className="py-2 max-w-screen px-10">
+        <Container className="max-w-screen py-2 px:0 md:px-10">
         {/* <div className="container"> */}
           <div className="grid grid-cols-2 items-center">
             {/* Left Column */}

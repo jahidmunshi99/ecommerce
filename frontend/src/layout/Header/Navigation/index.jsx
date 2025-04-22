@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import MainMenu from './MainMenu'
 import { IoRocketOutline } from "react-icons/io5";
-import ShopCategoryPanel from './ShopCategoryPanel';
 import Button from '@mui/material/Button';
 import { RiMenu2Fill } from "react-icons/ri";
 import { FaAngleDown } from "react-icons/fa6";
+import Container from '../../../components/SharedComponent/Container';
+import SideMenuPanel from './SideMenuPanel';
 
 
 const Navigation = () => {
@@ -15,32 +16,35 @@ const Navigation = () => {
   };
 
   return (
-    <nav className='py-4 border-t-1 border-b-1 border-b-gray-200 border-t-gray-200 bg-white'>
-        <div className="container">
-          <div className='flex justify-between items-center gap-8 font-[500]'>
+    <nav className='py-2 md:py-4 border-t-1 border-b-1 border-b-gray-200 border-t-gray-200 bg-white hidden md:block'>
+        <Container className="max-w-screen py-0 md:py-2 px:0 md:px-10">
+          <div className='grid grid-cols-1 md:grid-cols-[18%_60%_18%] gap-8 items-center text-sm font-medium'>
             {/* Shop Category Menus */}
-              <div className="col_1 w-[20%]">
-                <Button onClick={toggleDrawer(true)} className='!text-black gap-4 flex justify-between items-center w-full'>
-                  <RiMenu2Fill/>Shop By Categories
-                  <div className='ml-10'><FaAngleDown/></div>
-                </Button>
+              <div className="col">
+                <div className='w-full'>
+                  {/** Sidebar Menu Button */}
+                  <Button onClick={toggleDrawer(true)} className='!text-black gap-4 flex justify-between items-center w-full'>
+                    <RiMenu2Fill className='text-xl'/>Shop By Categories
+                    <div className=''><FaAngleDown/></div>
+                  </Button>
+                </div>
               </div>
 
             {/* Navigation Menu */}
-              <div className="col_2 w-[60%]">
+              <div className="col flex justify-start">
                 <MainMenu/>
               </div>
 
             {/* End Column */}
-              <div className="col_3 w-[20%]">
+              <div className="col">
                 <div className='flex items-center gap-3 justify-end'>
                   <IoRocketOutline style={{ fontSize: "20px" }} />Free Internation Delivery
                 </div>
               </div>
             </div>
-        </div>
+        </Container>
 
-        <ShopCategoryPanel toggleDrawer={toggleDrawer} showPanel={showPanel}/>
+        <SideMenuPanel toggleDrawer={toggleDrawer} showPanel={showPanel}/>
     </nav>
     
   )
