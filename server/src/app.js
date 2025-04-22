@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors')
-const userRoute = require('./routes/user.route')
+const userRoute = require('./routes/user.route.js')
 
 require("./config/db");
 
@@ -10,8 +10,10 @@ app.use( express.json() )
 app.use( cors() );
 
 
-// Api Routes
-app.use( '/api/user', userRoute )
+// User Route
+app.use( '/api/users', userRoute )
+
+
 
 
 
