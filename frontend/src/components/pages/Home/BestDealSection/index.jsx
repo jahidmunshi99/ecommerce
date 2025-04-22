@@ -1,5 +1,5 @@
 import React from 'react'
-import PromoCard from '../../../SharedComponent/PromoCard'
+import PromoCard from '../../../common/PromoCard'
 import { useFetch } from '../../../../useHook/useFetch'
 
 const BestDealSection = () => {

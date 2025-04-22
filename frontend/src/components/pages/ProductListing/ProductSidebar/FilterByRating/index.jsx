@@ -2,8 +2,8 @@ import React from 'react'
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import SidebarTitle from '../../../../SharedComponent/SidebarTitle'
-import StarRatting from '../../../../SharedComponent/StarRatting';
+import SidebarTitle from '../../../../common/SidebarTitle'
+import StarRatting from '../../../../common/StarRatting';
 
 
 const FilterByRating = () => {

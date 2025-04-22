@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import SidebarTitle from '../../../../SharedComponent/SidebarTitle'
+import SidebarTitle from '../../../../common/SidebarTitle'
 import { FaChevronUp } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
 import { useFetch } from '../../../../../useHook/useFetch';

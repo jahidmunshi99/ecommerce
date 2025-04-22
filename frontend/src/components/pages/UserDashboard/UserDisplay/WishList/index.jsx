@@ -1,5 +1,5 @@
 import React from 'react'
-import StarRatting from '../../../../SharedComponent/StarRatting'
+import StarRatting from '../../../../common/StarRatting'
 
 const WishList = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductCard from '../../../../../SharedComponent/ProductCard'
+import ProductCard from '../../../../../common/ProductCard'
 
 
 

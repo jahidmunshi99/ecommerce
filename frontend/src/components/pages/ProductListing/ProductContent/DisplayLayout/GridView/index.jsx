@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductCard2 from '../../../../../SharedComponent/ProductCard2'
+import ProductCard2 from '../../../../../common/ProductCard2'
 
 const GridView = ({items}) => {
 

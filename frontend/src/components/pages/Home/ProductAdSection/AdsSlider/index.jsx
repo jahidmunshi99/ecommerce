@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Button from '../../../../SharedComponent/Button'
+import Button from '../../../../common/Button'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { useFetch } from '../../../../../useHook/useFetch';

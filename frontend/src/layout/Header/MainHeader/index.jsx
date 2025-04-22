@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router'
 import NavLoginPanel from './NavLoginPanel'
-import Container from '../../../components/SharedComponent/Container'
-import Search from '../../../components/SharedComponent/Search'
+import Container from '../../../components/common/Container'
+import Search from '../../../components/common/Search'
 import { RiMenu3Fill } from "react-icons/ri";
 import MainMenuPanel from '../Navigation/SideMenuPanel'
 

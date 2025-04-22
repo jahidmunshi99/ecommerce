@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router";
-import Container from "../../../components/SharedComponent/Container"
+import Container from "../../../components/common/Container"
 
 const TopStrip = () => {
   return (

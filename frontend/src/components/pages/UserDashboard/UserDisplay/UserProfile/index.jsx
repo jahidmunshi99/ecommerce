@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../../../../SharedComponent/Button'
+import Button from '../../../../common/Button'
 import TextField from '@mui/material/TextField';
 
 const UserProfileInfo = () => {

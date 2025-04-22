@@ -1,6 +1,6 @@
 import React from 'react'
-import SidebarTitle from '../../../../SharedComponent/SidebarTitle'
-import RangeSlider from '../../../../SharedComponent/RangeSlider'
+import SidebarTitle from '../../../../common/SidebarTitle'
+import RangeSlider from '../../../../common/RangeSlider'
 
 const FilterByPrice = () => {
   return (

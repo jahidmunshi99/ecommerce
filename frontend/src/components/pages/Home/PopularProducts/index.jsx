@@ -1,8 +1,8 @@
 import React from 'react'
-import SectionTitle from '../../../SharedComponent/SectionTitle'
-import SectionSubTitle from '../../../SharedComponent/SectionSubTitle'
-import CatagoryTab from '../../../SharedComponent/CatagoryTab'
-import Slider from '../../../SharedComponent/Slider'
+import SectionTitle from '../../../common/SectionTitle'
+import SectionSubTitle from '../../../common/SectionSubTitle'
+import CatagoryTab from '../../../common/CatagoryTab'
+import Slider from '../../../common/Slider'
 
 const PropularProducts = () => {
   return (

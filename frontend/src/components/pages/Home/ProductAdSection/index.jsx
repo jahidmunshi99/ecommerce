@@ -1,7 +1,7 @@
 import React from 'react'
 import AdsSlider from './AdsSlider';
 import { useFetch } from '../../../../useHook/useFetch';
-import ProductAdsCard from '../../../SharedComponent/ProductAdsCard';
+import ProductAdsCard from '../../../common/ProductAdsCard';
 
 
 const ProductAdSection = () => {

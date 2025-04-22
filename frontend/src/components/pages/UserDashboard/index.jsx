@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import UserSidebar from './UserSidebar'
-import Sidebar from '../../../components/SharedComponent/Sidebar'
-import MainContent from '../../../components/SharedComponent/MainContent'
+import Sidebar from '../../../components/common/Sidebar'
+import MainContent from '../../../components/common/MainContent'
 import UserDisplay from './UserDisplay'
 
 

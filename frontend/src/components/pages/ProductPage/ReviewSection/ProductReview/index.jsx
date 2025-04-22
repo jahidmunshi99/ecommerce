@@ -2,8 +2,8 @@ import React from 'react'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
-import StarRatting from '../../../../SharedComponent/StarRatting';
-import Button from '../../../../SharedComponent/Button';
+import StarRatting from '../../../../common/StarRatting';
+import Button from '../../../../common/Button';
 
 const ProductReview = () => {
   return (

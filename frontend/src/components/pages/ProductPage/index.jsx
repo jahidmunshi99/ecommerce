@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import SectionTitle from '../../SharedComponent/SectionTitle';
+import SectionTitle from '../../common/SectionTitle';
 import LatestProducts from '../Home/LatestProducts';
 import ProductReviewSection from './ReviewSection';
 import ProductSection from './ProductSection';

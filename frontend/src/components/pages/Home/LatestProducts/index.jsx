@@ -1,6 +1,6 @@
 import React from 'react'
-import SectionTitle from '../../../SharedComponent/SectionTitle'
-import Slider from '../../../SharedComponent/Slider'
+import SectionTitle from '../../../common/SectionTitle'
+import Slider from '../../../common/Slider'
 
 const LatestProducts = () => {
   return (

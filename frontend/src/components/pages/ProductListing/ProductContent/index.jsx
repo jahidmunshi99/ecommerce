@@ -1,6 +1,6 @@
 import React from 'react'
 import DisplayLayout from './DisplayLayout'
-import MainContent from '../../../SharedComponent/MainContent'
+import MainContent from '../../../common/MainContent'
 
 const ProductContent = () => {
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import { IoChatboxOutline } from "react-icons/io5";
-import Button from "../../../components/SharedComponent/Button"
+import Button from "../../../components/common/Button"
 
 
 const FooterNav = () => {

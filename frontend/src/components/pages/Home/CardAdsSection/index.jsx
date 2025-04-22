@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductAdsCard from '../../../SharedComponent/ProductAdsCard'
+import ProductAdsCard from '../../../common/ProductAdsCard'
 import { useFetch } from '../../../../useHook/useFetch'
 
 const CardAdsSection = () => {

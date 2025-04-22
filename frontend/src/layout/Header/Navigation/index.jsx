@@ -4,7 +4,7 @@ import { IoRocketOutline } from "react-icons/io5";
 import Button from '@mui/material/Button';
 import { RiMenu2Fill } from "react-icons/ri";
 import { FaAngleDown } from "react-icons/fa6";
-import Container from '../../../components/SharedComponent/Container';
+import Container from '../../../components/common/Container';
 import SideMenuPanel from './SideMenuPanel';
 
 

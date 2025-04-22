@@ -1,6 +1,6 @@
 import React from 'react'
-import SectionTitle from '../../../SharedComponent/SectionTitle'
-import PostCard from '../../../SharedComponent/PostCard'
+import SectionTitle from '../../../common/SectionTitle'
+import PostCard from '../../../common/PostCard'
 
 const Blog = () => {
   return (

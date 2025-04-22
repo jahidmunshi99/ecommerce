@@ -7,7 +7,7 @@ import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
-import ShoppingCart from '../../../../components/SharedComponent/ShopplingCart';
+import ShoppingCart from '../../../../components/common/ShopplingCart';
 import { FaRegUser } from "react-icons/fa";
 
 

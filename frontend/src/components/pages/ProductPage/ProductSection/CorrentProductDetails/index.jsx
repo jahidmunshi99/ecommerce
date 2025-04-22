@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import AddCartButton from '../../../../SharedComponent/AddCartButton'
+import AddCartButton from '../../../../common/AddCartButton'
 import { FaRegHeart } from "react-icons/fa";
 import IconButton from '@mui/material/IconButton';
 import { Link } from 'react-router';

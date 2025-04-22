@@ -4,7 +4,7 @@ import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import { IoMdClose } from "react-icons/io";
-import Button from '../../SharedComponent/Button'
+import Button from '../../common/Button'
 import { MdDeleteOutline } from "react-icons/md";
 
 
